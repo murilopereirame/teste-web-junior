@@ -1,0 +1,514 @@
+$fontFamily: Arial, Helvetica, sans-serif
+$white: #fff
+$primary: #121135
+$greyOne: #c3c3c3
+$greyTwo: #e5e5e5
+$greyThree: #fafafb
+$greyFour: #e7e7e7
+$lemon: #cffd34
+
+body
+  height: 100%
+  background: linear-gradient(180deg, $primary 14.5%, $greyTwo 14.5%)
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+.content
+  display: flex
+  flex-direction: column
+  width: 768px
+
+
+.nav
+  background-color: $white
+  height: 60px
+  display: flex
+  justify-content: space-between
+  margin-top: 20px
+
+
+.logo
+  height: 100%
+  width: 50%
+  padding-left: 25px
+  display: flex
+  align-items: center
+
+  img
+    width: 7.5rem
+  
+
+
+.social
+  display: flex
+  width: 50%
+  align-items: center
+  justify-content: flex-end
+  padding-right: 25px
+
+  a
+    &:first-child img
+      margin-left: 0
+      width: 0.7rem
+    
+
+    img
+      width: 1.5rem
+      margin-left: 50px
+    
+  
+
+
+.top
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 200px
+  color: #fff
+  font-family: $fontFamily
+
+  > span
+    font-size: 40px
+    font-weight: bold
+  
+
+  p
+    font-size: 24px
+
+    span
+      color: $lemon
+    
+  
+
+
+.block_one, .block_two, .block_three, .block_four, .block_five, .block_six, .block_seven
+  background-color: #fff
+  margin-top: 10px
+  margin: 10px solid $greyOne
+
+
+.divider
+  margin-top: 20px
+
+
+.bo-header
+  display: flex
+  height: 80px
+
+
+.bo-number
+  display: flex
+  background-color: $greyTwo
+  align-items: center
+  justify-content: center
+
+  p
+    font-family: $fontFamily
+    font-weight: bold
+
+    &:first-child
+      max-width: 31%
+      font-size: 24px
+      margin-right: 5px
+    
+  
+
+
+.bo-header p:last-child
+  background-color: $primary
+  color: #fff
+  border-radius: 5px
+  font-size: 20px
+  padding: 4% 25px
+  display: table-cell
+  vertical-align: middle
+
+
+.bo-btn-info
+  background-color: $lemon
+  flex: 1
+  display: inherit
+  align-items: center
+  justify-content: center
+
+  a
+    color: $primary
+    font-weight: bold
+    font-family: $fontFamily
+    text-decoration: none
+    cursor: pointer
+  
+
+
+.bo-steps
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-top: 15px
+
+
+.steps-images
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: center
+
+  img
+    width: 4rem
+    margin-left: 100px
+
+    &:first-child
+      margin-left: unset
+    
+  
+
+
+.steps-progress
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 5px
+
+  ul
+    list-style: none
+    display: flex
+    align-items: center
+    padding-left: 0
+    margin: 0
+  
+
+  li
+    display: inline-block
+    width: 1rem
+    height: 1rem
+    line-height: 4rem
+    border-radius: 100%
+    background-color: #fff
+    border: 3px solid $greyTwo
+    position: relative
+    margin-left: 140px
+
+    &:first-child
+      margin-left: unset
+
+      &::before
+        display: none
+      
+    
+
+    &::before
+      content: ""
+      width: 140px
+      background-color: #d8d8d8
+      height: 2px
+      position: absolute
+      top: 0.5rem
+      right: 1.17rem
+    
+  
+
+  .active
+    background: $lemon
+    border-color: $primary
+    width: 1.5rem
+    height: 1.5rem
+
+    &::before
+      background-color: #03a9f4
+    
+  
+
+
+.steps-text
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: center
+  margin-top: 5px
+
+  ul
+    padding: 0
+    display: flex
+    align-items: center
+    list-style: none
+    margin: 0
+
+    li
+      max-width: 100px
+      font-weight: bold
+      font-family: $fontFamily
+      color: $greyTwo
+      margin-right: 60px
+      text-align: center
+    
+  
+
+  .active
+    color: $primary
+  
+
+  ul li:last-child
+    margin-right: unset
+  
+
+
+.bo-info
+  padding: 20px 25px 0 25px
+
+  p
+    font-family: $fontFamily
+    font-size: 15px
+  
+
+
+.bold
+  font-weight: bold
+  color: $primary
+
+
+.bt-header
+  width: 100%
+  text-align: center
+  font-family: $fontFamily
+  color: $primary
+  font-size: 20px
+  font-weight: bold
+
+
+.bt-content
+  font-family: $fontFamily
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-bottom: 25px
+
+  table
+    text-align: left
+    margin: 0 25px
+
+    th
+      background-color: $greyFour
+      padding-left: 15px
+    
+  
+
+
+.bt-product
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 5px 0
+
+  img
+    width: 5rem
+    height: 5rem
+  
+
+
+.product-info p
+  margin: 0
+
+
+.bt-content table
+  border-collapse: collapse
+  font-weight: bold
+
+  tbody tr
+    border: 2px solid #fff
+  
+
+
+.block_two .bt-content table
+  tr
+    td:first-child
+      background-color: $greyFour
+      color: $primary
+      font-weight: bold
+      padding: 5px 15px
+      font-size: 15px
+    
+
+    &:first-child td:first-child
+      background-color: unset
+      padding: 0
+      font-size: unset
+    
+  
+
+  td:last-child
+    background-color: $greyThree
+    text-align: right
+    padding-right: 10px
+  
+
+
+.blank
+  height: 15px
+  background-color: #Fff
+
+
+.center
+  text-align: center
+
+
+.block_three table
+  border-collapse: separate
+
+  td
+    font-size: 12px
+    text-align: center
+    background-color: $greyThree
+
+    a
+      color: $primary
+    
+  
+
+
+.block_four
+  .bt-content
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+  
+
+  table
+    margin-left: 25px
+    color: $primary
+
+    td
+      padding: 5px 15px
+    
+  
+
+  .bt-content
+    p
+      padding: 0 25px
+      font-size: 15px
+    
+
+    table tr td
+      &:first-child
+        background-color: $greyFour
+        max-width: 50px
+      
+
+      &:last-child
+        background-color: $greyThree
+        font-weight: normal
+      
+    
+  
+
+
+.block_five ul
+  list-style-type: '-'
+
+  li
+    padding-bottom: 25px
+    padding-left: 10px
+  
+
+
+.block_six .bt-content p
+  margin-left: 25px
+  color: $primary
+
+
+.bt-contact
+  display: grid
+  grid-template-columns: 50% 50%
+  margin: 0 25px
+
+
+.contact
+  background-color: $greyThree
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 10px
+  margin-right: 10px
+  margin-top: 10px
+
+  img
+    width: 4rem
+  
+
+
+.block_seven a
+  width: 100%
+
+  img
+    width: 100%
+  
+
+
+.divider
+  border: 1px solid $greyOne
+
+
+.footer
+  display: flex
+  flex-direction: column
+
+
+.cn
+  margin: 25px 25px 0 25px
+  display: flex
+  align-items: center
+  flex-direction: row
+
+
+.cn-img
+  margin-right: 15px
+  margin-bottom: 5px
+  height: 100%
+
+  img
+    width: 8rem
+    margin-bottom: 5px
+  
+
+
+.cn-text
+  font-family: $fontFamily
+  color: $primary
+  font-size: 11pt
+
+
+.payment
+  display: flex
+  align-items: center
+  margin-left: 25px
+  margin-top: 25px
+
+
+.payment-methods img
+  width: 4rem
+  margin-left: 10px
+
+  &:first-child
+    margin-left: 0
+  
+
+
+.stamp
+  margin-left: 35px
+
+
+.info
+  margin: 18px 0
+
+  p
+    font-family: $fontFamily
+    font-size: 12px
+    margin-top: 0
+    margin-bottom: 0
+  

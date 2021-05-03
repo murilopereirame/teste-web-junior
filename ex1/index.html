@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bannerContent {        
+        height: 511px;
+        position: absolute;
+        bottom: -366px;
+        right: 0;            
+      }
+
+      .close {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50px;                        
+        width: min-content;
+        float: left;
+        width: 50px;
+        height: 50px;
+        background-image: url('./x.png');
+        background-size: contain;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        display: none;
+      }
+
+      .btnControl {
+        width: 150px; 
+        height: 150px;
+        border-radius: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button class="btnControl">
+      <img src="up.svg" width="100px" height="100px" alt="control banner"/>
+    </button>
+    <div class="bannerContent">
+      <div onclick="destroyBanner()" class="close"></div>
+      <img class="banner" src="./banner.png" alt="banner promocional"/>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="nav">
+        <div class="logo">
+          <a target="_blank" rel="noreferrer" href="https://www.futfanatics.com.br/"><img src="images/logo.svg" alt="Logo FutFanatics"/></a>
+        </div>
+        <div class="social">
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/futfanatics"><img src="images/facebook.svg" alt="facebook"/></a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/futfanatics"><img src="images/twitter.svg" alt="twitter" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/futfanatics/"><img src="images/instagram.svg" alt="instagram" /></a>
+        </div>
+      </div>
+      <div class="top">
+        <span>Grande jogada, Rafael!</span>
+        <p>Recebemos seu pedido <span>[cod_pedido]</span>, realizado no dia [data_pedido]</p>
+      </div>
+      <div class="block_one">
+        <div class="bo-header">
+          <div class="bo-number">
+            <p>Número do pedido:</p>
+            <p>[cod_pedido]</p>
+          </div>
+          <div class="bo-btn-info">
+            <a href="#">Mais informações do pedido ></a>
+          </div>
+        </div>
+        <div class="bo-content">
+          <div class="bo-steps">
+            <div class="steps-images">
+              <img src="images/s1.svg" alt="Pedido realizado" />
+              <img src="images/s2.svg" alt="Pagamento Confirmado" />
+              <img src="images/s3.svg" alt="Em transporte" />
+              <img src="images/s4.svg" alt="Pedido Entregue" />
+            </div>
+            <div class="steps-progress">
+              <ul>
+                <li class="step active"></li>
+                <li class="step"></li>
+                <li class="step"></li>
+                <li class="step"></li>
+              </ul>
+            </div>
+            <div class="steps-text">
+              <ul>
+                <li class="active">Pedido Realizado</li>
+                <li>Pagamento Confirmado</li>
+                <li>Em Transporte</li>
+                <li>Pedido Entregue</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bo-info">
+          <p>
+            Fala <span class="bold">[nome_cliente]</span>, tudo certo?
+          </p>
+          <p>
+            Seu pedido foi recebido aqui na Fut, agora é só <span class="bold">aguardar a confirmação de pagamento.</span> Quando confirmado, iniciaremos o procedimento de entrega juntamente com a transportadora escolhida.
+          </p>
+          <p>
+            - Se você pagou com cartão, <span class="bold">em breve</span> vai receber a confirmação ou status por e-mail.
+          </p>
+          <p>
+            ⁃ Caso tenha escolhido pagar por boleto, a sua instituição financeira demora <span class="bold">até 48 horas</span> para confirmar o seu pagamento. Na mesma hora que recebermos a confirmação, vamos te enviar um e-mail avisando.
+          </p>
+          <p>
+            Se você perdeu o boleto, segue o jogo, pode encontrar ele <span class="bold" id="ticket">aqui</span> ou na seção de pagamento logo abaixo.
+          </p>
+        </div>
+      </div>
+      <div class="block_two">
+        <div class="bt-header">
+          <p>Detalhes do Pedido</p>
+        </div>
+        <div class="bt-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Produtos</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="bt-product">
+                    <img src="images/prod.webp" alt="Kit 3 em 1 Speedo" />
+                    <div class="product-info">
+                      <a href="#">
+                        <p>Kit 3 Em 1 Speedo Swim Kit 2.0</p>
+                        <p>(Disponibilidade: Envio imediato)</p>
+                      </a>
+                      <p>-Marca: Speedo</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="center">1</td>
+                <td>49,90</td>
+                <td>49,90</td>
+              </tr>
+              <tr class="blank"></tr>
+              <tr>
+                <td>Frete</td>
+                <td colspan="3">[valor_envio]</td>
+              </tr>
+              <tr>
+                <td>Desconto</td>
+                <td colspan="3">[acrescimo_desconto_forma_pgto]</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td colspan="3">[total_pedido]</td>
+              </tr>
+              <tr class="blank"></tr>
+              <tr>
+                <td>Transportadora Responsável</td>
+                <td colspan="3">[forma_envio]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="block_three">
+        <div class="bt-header">
+          <p>Dados de pagamento</p>
+        </div>
+        <div class="bt-content">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Forma de Pagamento
+                </th>
+                <th>
+                  Efetuar Pagamento
+                </th>
+                <th>
+                  Alterar Forma de Pagto
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[forma_pagamento_escolhida_pedido]</td>
+                <td><a href="#">Clique aqui</a></td>
+                <td><a href="#">Clique aqui</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="block_four">
+        <div class="bt-header">
+          <p>Seu endereço e prazo de entrega</p>
+        </div>
+        <div class="bt-content">
+          <p><span class="bold">Olho no lance!</span> O prazo de entrega é sempre informado em dias úteis e começa a ser contado a partir da data de postagem do seu pedido.</p>
+          <table>
+            <tr>
+              <td>Endereço</td>
+              <td>[endereco_entrega_pedido]</td>              
+            </tr>
+            <tr>
+              <td>Frete Escolhido</td>
+              <td>[forma_envio]</td>
+            </tr>
+            <tr>
+              <td>Prazo de Entrega</td>
+              <td>[prazo_recebimento]</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="block_five">
+        <div class="bt-header">
+          <p>Informações importantes</p>          
+        </div>
+        <div class="bt-content">
+          <ul>
+            <li>A partir deste momento você não pode incluir produtos em seu pedido ou alterar o endereço de entrega. Caso queira
+              adquirir outros produtos, realize uma nova compra;</li>
+            <li>Os itens do seu pedido já <span>estão reservados em nosso estoque.</span> Se pagamento não seja efetuado em até
+              <span>5 dias</span> a partir da data de envio deste e-mail, os produtos ficarão novamente disponíveis no site e
+              poderão ser comprados por outros clientes;</li>
+            <li>Para sua comodidade e segurança, as informações inseridas em seu cadastro são passíveis de confirmação, feita
+              através de contato telefônico. Caso isso ocorra, o prazo da entrega do seu pedido pode sofrer alguma alteração.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="block_six">
+        <div class="bt-header">
+          <p>Central de Relacionamento</p>
+        </div>
+        <div class="bt-content">
+          <p>Para dúvidas e informações, você pode conversar com a nossa Central de Relacionamento. Lembrando que atendemos de segunda a sexta-feira (das 8h às 18h) e aos sábados (das 8h às 12h), das seguintes formas:</p>
+          <div class="bt-contact">
+            <div class="contact">
+              <img src="images/phone.svg" alt="Telefone" />
+              <p>Ligue (18) 3199-0404 e fale com de nossos atendentes</p>              
+            </div>           
+            <div class="contact">
+              <img src="images/email.svg" alt="Email" />
+              <p>Envie um e-mail para contato@futfanatics.com.br/p>
+            </div>
+            <div class="contact">
+              <img src="images/chat.svg" alt="Chat" />
+              <p>Acesse o chat online e tire suas dúvidas em tempo real</p>
+            </div>
+            <div class="contact">
+              <img src="images/social.svg" alt="Social" />
+              <p>Fale com a Fut nas mídias sociais #somostodosfanaticos</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="block_seven">
+        <a src="#">
+          <img src="images/blog.png" alt="Blog"/>
+        </a>
+      </div>     
+      <div class="divider"></div>
+      <div class="footer">
+        <div class="cn">
+          <div class="cn-img">
+            <a href="https://www.futfanatics.com.br/"><img src="images/logo.svg" alt="Logo FutFanatics"/></a>
+          </div>
+          <div class="cn-text">
+            <p>
+              FF.Com Esportes Ltda. - CNPJ 05.328.923/0001-90<br/>
+              Rodovia Arthur Boigues Filho, 59 CEP: 19026-650 Presidente Prudente - SP
+            </p>
+            <p>
+              <span class="bold">CENTRAL DE RELACIONAMENTO:</span> Segunda a Sexta, 8h às 20h | Sábado, 8h às 12h<br/>
+              E-mail: contato@futfanatics.com.br | Fone: (18) 3199-0404
+            </p>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="payment-methods">
+            <img src="images/boleto.svg" alt="Boleto" />
+            <img src="images/visa.svg" alt="Visa" />
+            <img src="images/master.svg" alt="MasterCard" />
+            <img src="images/hipercard.svg" alt="Hipercard" />
+            <img src="images/elo.svg" alt="Elo" />
+            <img src="images/diners.svg" alt="Diners Club" />
+            <img src="images/american.svg" alt="American Express" />
+            <img src="images/paypal.svg" alt="PayPal" />
+          </div>
+          <div class="stamp">
+            <img src="images/ebit.png" alt="Ebit"/>
+          </div>
+        </div>
+        <div class="info">
+          <p>
+            <span class="bold">INFORMAÇÕES GERAIS:</span> Os preços, promoções, condições de pagamento e frete são válidos exclusivamente para compras
+            realizadas via internet e poderão sofrer alterações sem prévio aviso. Em caso de divergência, o preço válido é sempre o
+            do carrinho. Imagens meramente ilustrativas.
+          </p>
+          <p>
+            <span class="bold">CONDIÇÕES DE FRETE:</span> Frete Grátis para todo Brasil. Consulte nossa Política de Frete no Portal de Ajuda da loja ou simule
+            o valor para sua região na página de carrinho.
+          </p>
+          <p>
+            <span class="bold">CONDIÇÕES DE PARCELAMENTO:</span> Pagamento parcelado em cartões de crédito com bandeira Visa, Mastercard, Dinners, Hipercard,
+            American Express e Elo em até 10x sem juros com parcela mínima de R$ 34,90. Pagamento parcelado no PayPal em até 12x sem
+            juros com parcela mínima de R$ 19,90. Venda sujeita a análise e confirmação de dados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
